@@ -1,5 +1,5 @@
 # Parcial2
-
+### Realizado por: Jacobo Pacheco, Ricardo Plaza, Juan Diego Martinez
 ## Crear el entorno para la api
 ```
 mkdir api-protegida
