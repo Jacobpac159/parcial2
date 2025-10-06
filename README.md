@@ -1,6 +1,6 @@
-# parcial2
+# Parcial2
 
-##Crear el entorno para la api
+## Crear el entorno para la api
 ```
 mkdir api-protegida
 cd api-protegida
@@ -8,7 +8,7 @@ npm init -y
 npm install express express-jwt jwks-rsa
 ```
 
-##Crear el server.js para tener una api protegida
+## Crear el server.js para tener una api protegida
 ```
 const express = require("express");
 const { expressjwt: jwt } = require("express-jwt");
@@ -54,7 +54,7 @@ app.post("/api/data", requireScope("service.write"), (req, res) => {
 app.listen(3000, () => console.log("API protegida corriendo en http://localhost:3000"));
 ```
 
-##Ejecutar:
+## Ejecutar:
 node server.js
 
 ##prueba con postman:
