@@ -8,7 +8,7 @@ npm init -y
 npm install express express-jwt jwks-rsa
 ```
 
-##Crear el server.js en vsc
+##Crear el server.js para tener una api protegida
 ```
 const express = require("express");
 const { expressjwt: jwt } = require("express-jwt");
