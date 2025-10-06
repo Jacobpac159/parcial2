@@ -7,7 +7,7 @@ npm init -y
 npm install express express-jwt jwks-rsa
 
 ##Crear el server.js en vsc
-const express = require("express");
+'''const express = require("express");
 const { expressjwt: jwt } = require("express-jwt");
 const jwksRsa = require("jwks-rsa");
 
@@ -48,7 +48,7 @@ app.post("/api/data", requireScope("service.write"), (req, res) => {
   res.json({ message: "✅ Acceso concedido con scope service.write" });
 });
 
-app.listen(3000, () => console.log("API protegida corriendo en http://localhost:3000"));
+app.listen(3000, () => console.log("API protegida corriendo en http://localhost:3000"));'''
 
 ##Ejecutar
 node server.js
