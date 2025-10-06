@@ -77,22 +77,8 @@ client_id	service-client
 client_secret	(pídele a tu compañero el secreto de ese cliente)
 scope	service.read
 
-Presiona Send
 
-👉 Si todo está bien, Postman te devolverá un JSON con este formato:
-
-{
-  "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6...",
-  "expires_in": 300,
-  "token_type": "Bearer",
-  "scope": "service.read"
-}
-
-🧩 3️⃣ Copia el access_token
-
-Ese es el token que vas a usar para autenticarte en tu API.
-
-🧩 4️⃣ Crea otra request para llamar tu API
+Crea otra request para llamar tu API
 
 Método: GET
 
@@ -107,8 +93,6 @@ En el campo del token pega el access_token que copiaste.
 
 Presiona Send
 
-👉 Si el token es válido y tiene el scope correcto, verás algo como:
-
 {
   "message": "✅ Acceso concedido con scope service.read",
   "tokenInfo": {
@@ -119,22 +103,4 @@ Presiona Send
   }
 }
 
-
-🎯 ¡Eso confirma que tu API está validando el token emitido por Keycloak!
-
-🧩 5️⃣ Prueba un caso fallido (para mostrar seguridad)
-
-Borra el token o pon uno inventado.
-
-Presiona Send de nuevo.
-→ Debe responder:
-
-{
-  "message": "Unauthorized"
-}
-
-
-o 401 Unauthorized (según cómo esté firmado el token).
-
-Así demuestras que la validación funciona.
 
