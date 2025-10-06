@@ -1,10 +1,12 @@
 # parcial2
 
 ##Crear el entorno para la api
+```
 mkdir api-protegida
 cd api-protegida
 npm init -y
 npm install express express-jwt jwks-rsa
+```
 
 ##Crear el server.js en vsc
 ```
