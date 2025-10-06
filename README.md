@@ -52,7 +52,7 @@ app.post("/api/data", requireScope("service.write"), (req, res) => {
 app.listen(3000, () => console.log("API protegida corriendo en http://localhost:3000"));
 ```
 
-##Ejecutar
+##Ejecutar:
 node server.js
 
 ##prueba con postman:
